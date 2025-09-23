@@ -1,0 +1,25 @@
+-Git is local repository
+-Github is a hosted repository
+
+---Important commands---
+=======================================
+Scenario 1
+=======================================
+You start by creating a repository on Github
+git clone https://github.com/adi4733/Airflow-Weather-Data-Pipeline.git
+
+I added a new file in fin-project as transformations.py
+and made changes to the readme.md
+
+
+git add . 
+To stage all the file so that it can be committed
+
+git commit -m "message"
+this commits the file from the staging to the commit stage and the code is ready to be pushed to the github repository
+
+git push origin main
+
+origin - referring to the github repository https://github.com/adi4733/Airflow-Weather-Data-Pipeline.git
+main - It is basically the branch on which it will be pushedls
+
