@@ -21,5 +21,28 @@ this commits the file from the staging to the commit stage and the code is ready
 git push origin main
 
 origin - referring to the github repository https://github.com/adi4733/Airflow-Weather-Data-Pipeline.git
-main - It is basically the branch on which it will be pushedls
+main - It is basically the branch on which it will be pushed
 
+
+HOw to push a new project to Github
+
+step1 - stage all the file
+step2 - Commit the file in local
+step3 - set origin (link origin to the remote repository) by using the below command
+        git remote add origin https://github.com/adi4733/learning-github.git
+        this will link your local rep to github repo
+step4 - 
+
+
+how to check to which repo your origin points at
+    git remote -v
+
+how to check on which branch we are
+    git branch
+
+how to rename master to main (becoz github has main but git has master)
+ git branch -M main
+
+How to push code from local to github
+ git push origin main 
+ (git push -u origin main - one time command to which will help you to push the gode to github with just git push)
