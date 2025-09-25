@@ -31,7 +31,7 @@ step2 - Commit the file in local
 step3 - set origin (link origin to the remote repository) by using the below command
         git remote add origin https://github.com/adi4733/learning-github.git
         this will link your local rep to github repo
-step4 - 
+step4 - git push origin main
 
 
 how to check to which repo your origin points at
@@ -41,10 +41,38 @@ how to check on which branch we are
     git branch
 
 how to rename master to main (becoz github has main but git has master)
- git branch -M main
+ git branch -M main (-M stands for main)
 
 How to push code from local to github
  git push origin main 
  (git push -u origin main - one time command to which will help you to push the gode to github with just git push)
  it basically means you are setting up upstream so you just need git push to push your code
+ HEAD
+
+
+ ==> Branching In Git
+
+ How to check on which branch you are
+ git branch 
+
+ How do you create a new branch lets say feature1 be the name
+ git branch feature1
+
+ How to change/switch to a different branch 
+ git checkout feature1
+
+ lets say you are on feature1 branch and again if you create a branch it will clone
+ the code from the feature1 branch and not from the main branch
+
+you can create and switch to a differenct branch in one step1
+git checkout -b feature2
+
+
+lets say you are on main branch and want to create a branch having the code same as feature2 and switch to the new branch
+git checkout -b <new branch name> <base branch name>
+git checkout -b feature3 feature2
+
+How to delete a branch (cannot delete a branch on which you aregit )
+git branch -d <branch name>
+origin/main
  
