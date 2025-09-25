@@ -76,3 +76,20 @@ How to delete a branch (cannot delete a branch on which you aregit )
 git branch -d <branch name>
 origin/main
  
+HOw to restore codebase3 from different scenarios
+
+1.you made changes but the code is not staged
+git restore <filename>
+
+2.you made changes and the code is staged
+git restore --staged <filename>
+
+3.you made changes and have committed the changes
+
+step1 - use git log to check the commit history
+step2 - find the commit hash not
+step3 - use "git reset <commit hash no>" to restore the codebase to unstaged level
+        (can also use git reset -hard <commit hash no> to do a hard reset)
+        
+To unstage just one level
+git reset head~1
